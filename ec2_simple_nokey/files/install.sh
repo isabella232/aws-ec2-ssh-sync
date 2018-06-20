@@ -2,7 +2,7 @@
 
 # Install AWS Cli
 source /etc/os-release
-if [ "$NAME" == "Ubuntu" ]; then
+if [ "$NAME" == "Ubuntu" ] || [ "$NAME" == "Debian GNU/Linux" ]; then
   ssh_service="ssh"
   sudo apt-get update
   sudo apt-get -y install python-pip

@@ -2,7 +2,7 @@
 
 # Install Git
 source /etc/os-release
-if [ "$NAME" == "Ubuntu" ]; then
+if [ "$NAME" == "Ubuntu" ] || [ "$NAME" == "Debian GNU/Linux" ]; then
   sudo apt-get -y install git
 elif [ "$NAME" == "Amazon Linux AMI" ]; then
   sudo yum install -y git
